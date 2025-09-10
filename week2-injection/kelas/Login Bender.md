@@ -16,3 +16,11 @@ Setelah mendapatkan *email name* dari Bender, kita ketikkan pada section yang ad
 
 3. Kita berhasil masuk sebagai Bender disini, terbukti dari tampilan pada *login button* yang ada, tertampil *email* dari Bender.
 ![alt text](images/image-6.png)
+
+Dari hasil di atas, maka diketahui 
+
+- Hasil: Berhasil
+
+- Alasan: Login sebagai Bender berhasil karena kombinasi teknik OSINT (mencari alamat email target dari kolom review) dan SQL Injection (bender@juice-sh.op'--) membuat query SQL yang dijalankan mengabaikan bagian password. Dengan begitu, sistem langsung menerima login menggunakan email Bender.
+
+- Refleksi: Percobaan ini menegaskan bahwa serangan sering kali tidak hanya mengandalkan eksploitasi teknis, tetapi juga informasi yang tersedia secara publik (OSINT). Jika aplikasi tidak mengamankan input dengan baik, maka data yang sudah terekspos dapat dimanfaatkan untuk akses tidak sah.

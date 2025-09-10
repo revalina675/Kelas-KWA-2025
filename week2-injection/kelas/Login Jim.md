@@ -16,3 +16,11 @@ Kembali menggunakan SQL Injection, kita coba menambahkan command untuk membypass
 
 3. Kita telah berhasil masuk sebagai Jim pada sistem, terbukti saat kita buka *login* info kita tertampil email Jim.
 ![alt text](images/image-10.png)
+
+Dari hasl di atas, dapat diketahui
+
+- Hasil: Berhasil
+
+- Alasan: Login sebagai Jim berhasil karena alamat email Jim dapat ditemukan lewat OSINT pada review produk. Dengan menambahkan SQL Injection jim@juice-sh.op'--, query yang dijalankan sistem mengabaikan password sehingga autentikasi tetap diterima.
+
+- Refleksi: Percobaan ini memperlihatkan bahwa data publik seperti review dapat menjadi celah serius jika digabungkan dengan kerentanan SQL Injection. Dari sisi keamanan, penting bagi aplikasi untuk menerapkan proteksi input, parameterized query, serta membatasi informasi sensitif yang ditampilkan secara terbuka.
