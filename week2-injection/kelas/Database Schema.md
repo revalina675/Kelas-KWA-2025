@@ -27,3 +27,9 @@ Source: https://demo.owasp-juice.shop/#/score-board?categories=Injection
 
 5. Tertampil jika kita sudah berhasil menyelesaikan case
 ![alt text](images/image-14.png)
+
+- Hasil: Berhasil
+
+- Alasan: Dengan memanfaatkan parameter q di fitur search, penyerang dapat memasukkan payload SQL Injection (')) UNION SELECT ... FROM sqlite_schema--) yang akhirnya menampilkan struktur database (sqlite_schema). Hal ini terjadi karena input pengguna tidak difilter atau diproteksi dengan baik sebelum dimasukkan ke query SQL.
+
+- Refleksi: Percobaan ini menunjukkan bahwa meskipun fitur search terlihat sederhana, jika tidak diamankan bisa menjadi celah serius. Mengungkap skema dari suatu database berarti memberi penyerang informasi sensitif untuk eksploitasi lanjutan (misalnya enumerasi tabel, kolom, hingga isi data).
