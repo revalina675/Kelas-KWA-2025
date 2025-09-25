@@ -7,7 +7,7 @@ Source: http://localhost:3000/#/score-board?categories=Cryptographic%20Issues
 **Langkah-langkah:**
 
 1. Masuk pada bagian Menu lalu Customer Feedback
-![alt text](images/image-1.pngimage-1.png)
+![alt text](images/image-1.png)
 
 2. Ketikkan "MD5 is insecure" pada kolom review, lalu isi bebas untuk rating dan jangan lupa inputkan captchanya. Challenge telah tersolve.
 ![alt text](images/image.png)
